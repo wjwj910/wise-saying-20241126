@@ -1,17 +1,13 @@
 package com;
 
-import java.io.*;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         //lab1();
         //lab2();
         //lab3();
-        lab4();
+        //lab4();
     }
-
-
+/*
     private static void lab1() {
         Scanner scanner = new Scanner(System.in);
 
@@ -64,4 +60,8 @@ public class Main {
         }
 
     }
+
+ */
+
+
 }
