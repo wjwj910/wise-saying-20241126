@@ -1,16 +1,19 @@
 package com;
 
 import com.domain.system.controller.SystemController;
+import com.domain.wiseSaying.controller.WiseSayingController;
 
 import java.util.Scanner;
 
 public class App {
     private final Scanner scanner;
     private final SystemController systemController;
+    private final WiseSayingController wiseSyingController;
 
     public App(Scanner scanner) {
         this.scanner = scanner;
         this.systemController = new SystemController();
+        this.wiseSyingController = new WiseSayingController(scanner);
     }
 
     public void run() {
@@ -23,6 +26,8 @@ public class App {
             if ("종료".equals(cmd)) {
                 systemController.actionExit();
                 break;
+            } else if ("등록".equals(cmd)) {
+                wiseSyingController.actionAdd();
             }
         }
     }
