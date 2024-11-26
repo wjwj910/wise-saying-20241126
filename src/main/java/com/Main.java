@@ -42,6 +42,7 @@ public class Main {
 
     private static void lab4() {
         System.out.println("== 시작 ==");
+
         // 출력이 모니터로 안나오게 설정
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         System.setOut(new PrintStream(output));
@@ -54,6 +55,7 @@ public class Main {
 
         System.out.println("== 끝 ==");
         System.out.println("출력 : " + output.toString());
+
         // output 자원 해제
         try {
             output.close();
